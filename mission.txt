@@ -1,1 +1,9 @@
 Mission :Losers to Winners
+our tasks:
+1.Leader Findng Algorithm
+2/.BubbleSort 
+3.MergeSort
+4.Median Finding Algorithm
+5/.Hilbert's Curve               
+6.Data Encryption_Decryption
+7/.Snake Making
