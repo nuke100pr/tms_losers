@@ -21,22 +21,31 @@ for i in range (0,54,1):
      if(data[i][j]!=0):
        c+=1
    count[i]=c
-   
+
+temp=0   
 def func(person,y):
+    global temp
     if(y>100):
-     return
+     return temp-1
     else :
       rn = random.randint(0,count[person]-1)
       person2 = data[person][rn]
       points[person2-1] +=1
       y +=1
+      temp = person2
       return func(person2-1,y)
 
 n= input("ENTER THE RANGE\n")
 x= input("STARTING PERSON\n")
 
+t=0
+a=0
 for i in range(1,int(n),1):
-  func(int(x),0) 
+  if(i==1):
+    t =func(int(x),0) 
+  else:
+    a =func(t,0)
+    t=a
 
 index =1
 largest = points[0]
